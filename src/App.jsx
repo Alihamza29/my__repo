@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import BackgroundVideo from './Components/BackgroundVideo';
 import Started from './Components/Started';
@@ -9,7 +9,7 @@ import Review from './Components/Review';
 import Contact from './Components/Contact'; // Ensure this is the right path
 import About from './Components/About';
 import Footer from './Components/Footer';
-import { HashRouter } from 'react-router-dom';
+
 
 const App = () => {
   const [reviews, setReviews] = useState([]);
@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <Router>
-      <HashRouter>
+     
         <div>
           <Navbar />
           <Routes>
@@ -62,7 +62,7 @@ const App = () => {
 
           <Footer />
         </div>
-      </HashRouter>
+      
     </Router>
   );
 };
